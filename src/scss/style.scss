@@ -1,0 +1,24 @@
+@import "./nullStyle.scss";
+@import "./fonts.scss";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Factor A";
+  
+  .container {
+    width: 1440px;
+    position: relative;
+    background-color: #585CC6;
+    
+    .polzuha {
+      position: absolute;
+      z-index: 0;
+      top: -90px;
+      right: -60px;
+      user-select: none;
+    }
+  }
+}
+

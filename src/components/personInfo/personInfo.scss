@@ -1,0 +1,112 @@
+.welcome {
+  color: white;
+  font-size: 124px;
+  font-weight: 500;
+  margin: 220px 0 100px 80px;
+  z-index: 2;
+}
+
+.person {
+  display: flex;
+  font-family: 'Gilroy';
+  margin: 0 80px 120px 80px;
+  z-index: 2;
+
+  .person_photo {
+    margin-top: 32px; 
+    border-radius: 2px;
+    border: 1px solid black;
+  }
+
+  .person_info {
+    padding: 40px;
+    width: 761px;
+    height: 383px;
+    background-color: white;
+    margin-bottom: 32px;
+    border-radius: 2px;
+    z-index: 2;
+
+    .name_birthday {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+  
+      .birthday {
+        font-size: 18px;
+        color: grey;
+        
+      }
+    }
+    .person_name {
+      font-family: 'Factor A';
+      font-weight: bold;
+      font-size: 32px;
+      color: #585CC6;
+    }
+  
+    .person_info_ul {
+      display: flex;
+      align-items: center;
+      margin: 20px 0 20px 0;
+  
+      li {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+  
+        img {
+          margin-left: 8px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  
+    .person_info_about {
+      font-weight: 500;
+      font-size: 18px;
+      
+      button {
+        background-color: #585CC6;
+        font-family: 'Gilroy';
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        border-radius: 2px;
+        margin-left: 20px;
+        height: 30px;
+        width: 120px;
+        z-index: 50;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #696dc8;
+          transition: 0.2s;
+          
+        }
+        
+        &:active {
+          background-color: #797ddf;
+          transition: 0.05s;
+        }
+      }
+    }
+  } 
+}
+
+.adv_info {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Gilroy';
+  position: relative;
+  padding: 40px;
+  top: -150px;
+  left: 599px;
+  width: 761px;
+  background-color: white;
+  // margin: 0 80px 120px 80px;
+  border-radius: 2px;
+  z-index: 2;
+  display: none;
+}

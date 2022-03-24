@@ -1,0 +1,59 @@
+.main-container {
+  width: 1062px;
+  display: flex;
+  // align-items: center;
+  flex-direction: column;
+
+  .window {
+    height: 279px;
+    width: 100%;
+    overflow: hidden;
+    // border: 1px solid red;
+
+    .all-pages-container {
+      height: 100%;
+      display: flex;
+      transition: translate;
+      transition-property: transform;
+      transition-duration: 300ms;
+      transition-timing-function: ease-in-out;
+    }
+  }
+  
+  .arrow_container{
+    display: flex;
+    
+    
+    .arrow {
+      height: 30px;
+      width: 40px;
+      // padding: 0 10px 0 10px;
+      cursor: pointer;
+    }
+  }
+
+  .arrows { 
+    position: relative;
+    top: 14px;
+    right: -1164px;
+    width: 128px;
+
+    .left_arrow {
+      // margin-right: 16px;
+      transform: rotate(180deg);
+      cursor: pointer;
+    }
+
+    .right_arrow {
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+
+
+
+

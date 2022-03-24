@@ -1,0 +1,193 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  // display:none; 
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.5);
+  backdrop-filter: blur(5px);
+
+  .modal_dialog {
+    width: 676px;
+    margin: 240px auto;
+
+    .modal_content {
+      position: relative;
+      width: 100%;
+      padding: 24px;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid rgba(0,0,0,.2);
+      border-radius: 2px;
+      max-height: 80vh;
+      overflow-y: auto;
+      font-size: 16px;
+      font-weight: 500;
+     
+
+      .input_header {
+        margin: 32px 0 12px 0;
+      }
+
+      .modal_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          font-size: 24px;
+          font-weight: 500;
+        }
+
+        img {
+          cursor: pointer;
+        }
+      }
+
+      .name_photo {
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+
+        .input_name {
+          width: 395px;
+          border: 1px solid lightgray;
+          border-radius: 2px;
+          font-family: 'Gilroy';
+          padding-left: 12px;
+        }
+
+        .input_name::placeholder {
+          color: grey;
+        }
+
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: grey;
+          color: white;
+          width: 217px;
+          font-family: 'Gilroy';
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 0.01em;
+          border-radius: 2px;
+          text-align: center;
+          cursor:auto;
+
+
+          img {
+            margin-right: 11px;
+            margin-top: 3px;
+          }
+        }
+      }
+
+      .photo_download {
+        display: flex;
+        align-items: center;
+        margin-top: 26px;
+        // display: none;
+
+        .name_status {
+          display: flex;
+          flex-direction: column;
+          margin: 0 16px 0 12px;
+          font-family: 'Gilroy';
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 130%;
+
+          img {
+            margin-top: 5px;
+          }
+        }
+      }
+
+      .input_review {
+        width: 628px;
+        height: 105px;
+        border: 1px solid lightgray;
+        border-radius: 2px;
+        font-family: 'Gilroy';
+        padding: 12px 0 0 12px;
+        text-align: start;
+        resize: none;
+      }
+
+      .input_review::placeholder {
+        color: grey;
+      }
+
+      .review_send {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 52px;
+        margin-top: 35px;
+
+        .add_button {
+          background-color: #585CC6;
+          color: white;
+          width: 203px;
+          height: 52px;
+          font-family: 'Gilroy';
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 0.01em;
+          border-radius: 2px;
+          text-align: center;
+
+          &:hover {
+            background-color: #696dc8;
+            transition: 0.2s;
+            
+          }
+          
+          &:active {
+            background-color: #797ddf;
+            transition: 0.05s;
+          }
+        }
+
+        .modal_info {
+          display: flex;
+          font-family: 'Gilroy';
+          font-size: 12px;
+          color: grey;
+          margin-left: 16px;
+          font-weight: normal;
+
+          p {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.add_button_disabled {
+  background-color: grey;
+  color: white;
+  width: 203px;
+  height: 52px;
+  font-family: 'Gilroy';
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  border-radius: 2px;
+  text-align: center;
+  cursor: auto;
+}

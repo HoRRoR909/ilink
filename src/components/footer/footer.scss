@@ -1,0 +1,26 @@
+.footer {
+  height: 64px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 106px;
+  font-family: 'Gilroy';
+  font-size: 16px;
+  color: #8A8A8A;
+  z-index: 2;
+
+  p {
+    margin: 0 0 0 80px;
+  }
+
+  ul {
+    margin: 0 80px 0 0;
+    display: flex;
+
+    li {
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+}

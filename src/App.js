@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+import Header from './components/header/Header'
+import PersonInfo from './components/personInfo/PersonInfo'
+// import ReviewModal from './components/reviewModal/ReviewModal'
+import Reviews from './components/reviews/Reviews'
+import Footer from './components/footer/Footer'
+
+
+import polzuha from './resourses/img/polzuha.svg'
+
+// import messageError from './resourses/img/message-error.svg'
+
+import './scss/style.scss'
 
 function App() {
+
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="container">
+        <img width="827.73" height="1610" src={polzuha} alt="polzuha" className="polzuha"/>
+        <Header />
+        <PersonInfo />
+        <Reviews />
+        <Footer />
+      </div>
     </div>
   );
 }
